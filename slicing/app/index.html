@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Kortes Template</title>
+        <!-- build:css css/vendor.css -->
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- fancybox -->
+        <link rel="stylesheet" href="bower/fancybox/source/jquery.fancybox.css">
+        <!-- bxslider -->
+        <link rel="stylesheet" href="bower/bxslider-4/dist/jquery.bxslider.css">
+        <!-- Stepper -->
+        <link rel="stylesheet" href="bower/Stepper/jquery.fs.stepper.css">
+        <!-- Selecter -->
+        <link rel="stylesheet" href="bower/Selecter/jquery.fs.selecter.css">
+        <!-- Animated -->
+        <link rel="stylesheet" href="css/animate.min.css">
+        <!-- Template CSS -->
+        <link rel="stylesheet" href="css/main.css">
+        <!-- endbuild -->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- modal -->
+        <div id="order" class="modal">
+            <div class="application">
+                <h2>Оставьте заявку на индивидуальный расчет стоимости Вашего перевода</h2>
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <input type="text" name="first_name" placeholder="Введите Ваше имя">
+                    <input type="text" name="phone" placeholder="Введите Ваш телефон">
+                    <input type="text" name="email" placeholder="Введите Ваше e-mail">
+                    <div class="file_upload_2">
+                        <button class="button_2" type="button">Обзор</button>
+                        <div class="div_1">Загрузить файл</div>
+                        <input class="input_1" type="file" name="file-upload">
+                    </div>
+                    <a id="add_comm_2" href="#">Добавить комментарий</a>
+                    <div class="wrap-comment_2">
+                        <textarea name="comment" id="t_comm" cols="27" rows="2">Ваш комментарий</textarea>
+                    </div>
+                    <input type="submit" value="Отправить">
+                </form>
+            </div><!-- .application -->
+        </div>
+        <!-- end modal -->
+        <a href="#order" class="order-red">Заказать перевод</a>
+        <header class="header">
+        	<nav class="navigation">
+        		<div class="container">
+        			<div class="row">
+                        <div class="col-md-10">
+                            <div class="main_menu">
+                                <ul>
+                                    <li><a href="#cost">Услуги</a></li>
+                                    <li><a href="#">Стоимость</a></li>
+                                    <li><a href="#">Оплата</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                </ul>
+                            </div>
+                            <button class="toggle_mnu">
+                                <span class="sandwich">
+                                    <span class="sw-topper"></span>
+                                    <span class="sw-bottom"></span>
+                                    <span class="sw-footer"></span>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="col-md-2 col-xs-8">
+                            <a href="#order" class="order">Заказать перевод</a>
+                        </div>
+        			</div>
+        		</div>
+        	</nav><!-- .navigation -->
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-md-6 col-xs-6 logo">
+                        <a href="#">
+                            <img src="img/logo.png" alt="Логотип сайта">
+                        </a>
+                    </div><!-- .logo -->
+                    <div class="col-md-6 col-xs-6 links-head">
+                        <a href="#">Переводчику</a>
+                        <a href="#">Личный аккаунт</a>
+                    </div><!-- .links-head -->
+                </div>
+                <div class="row">
+                    <div class="col-md-12 zag">
+                        <h1>Профессиональные переводы любого формата<br /> <span>в течение 24 часов</span></h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8"></div>
+                    <div class="col-md-5 application-wrap">
+                        <div class="application">
+                            <h2>Оставьте заявку на индивидуальный расчет стоимости Вашего перевода</h2>
+                            <form action="#" method="post" enctype="multipart/form-data">
+                                <input type="text" name="first_name" placeholder="Введите Ваше имя">
+                                <input type="text" name="phone" placeholder="Введите Ваш телефон">
+                                <input type="text" name="email" placeholder="Введите Ваше e-mail">
+                                <div class="file_upload_1">
+                                    <button class="button_1" type="button">Обзор</button>
+                                    <div class="div_1">Загрузить файл</div>
+                                    <input class="input_1" type="file" name="file-upload">
+                                </div>
+                                <a id="add_comm_1" href="#">Добавить комментарий</a>
+                                <div class="wrap-comment_1">
+                                    <textarea name="comment" id="t_comm" cols="27" rows="2">Ваш комментарий</textarea>
+                                </div>
+                                <input type="submit" value="Отправить">
+                            </form>
+                        </div><!-- .application -->
+                    </div><!-- .application-wrap -->
+        		</div>
+        	</div>
+        </header>
+        <section class="complex">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2><span>Выполним любой комплекс переводческих услуг</span></h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="one">
+                        Письменный перевод статей, различных текстов, инструкций, презентаций и весь спектр документов</p>
+                        <p class="too">Ведение деловой переписки с контрагентами, перевод договоров и соглашений</p>
+                        <p class="tree">Редактирование и корректорская правка переводов</p>
+                        <p class="four">Расшифровка, перевод аудиозаписей и видеоматериалов</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="five">Перевод и верстка различных схем, таблиц, чертежей</p>
+                        <p class="six">Локализация и перевод сайтов</p>
+                        <p class="seven">Аутсорсинг переводов деловой переписки и документации</p>
+                        <p class="eight">Гарантия качества и конфиденциальности</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                        <a class="btn" href="#">Получить консультацию специалистов</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="branch">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2><span>Мы знаем особенности переводов Вашей сферы</span></h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li>Нефтегазовая отрасль</li>
+                            <li>Горнодобывающая отрасль</li>
+                            <li>Энергетика</li>
+                            <li>Сельское хозяйство</li>
+                            <li>Строительство</li>
+                            <li>Тяжелая промышленность</li>
+                            <li>Металлургия</li>
+                            <li>Банковская деятельность</li>
+                            <li>Юриспруденденция</li>
+                            <li>Медицина</li>
+                            <li>Промышленное оборудование</li>
+                            <li>Программое обеспечение</li>
+                            <li>Реклама и маркетинг</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li>Интернет</li>
+                            <li>Транспорт и логистика</li>
+                            <li>Автомобилестроение</li>
+                            <li>Отдых и туризм</li>
+                            <li>Спорт</li>
+                            <li>Финансы</li>
+                            <li>Медицина</li>
+                            <li>Мебель</li>
+                            <li>Одежда</li>
+                            <li>Парфюмерия</li>
+                            <li>Продукты питания</li>
+                            <li>Косметика</li>
+                            <li>Бытовая химия</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <a class="btn" href="#">Заказать перевод</a>
+                    </div>
+                </div>
+            </div>
+        </section><!-- .branch -->
+        <section class="result">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2><span>Оптимальный результат в минимальные сроки</span></h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="wrap-results">
+                        <div class="col-md-2 col-xs-2 result-one">
+                            <div class="result-wrap">
+                                <i></i>
+                            </div>
+                            <p>Получение заявки</p>
+                        </div><!-- .result-one -->
+                        <div class="col-md-2 col-xs-2 result-too">
+                            <div class="result-wrap">
+                                <i></i>
+                            </div>
+                            <p>Согласование деталей и подготовка коммерческого предложения</p>
+                        </div><!-- .result-too -->
+                        <div class="col-md-2 col-xs-2 result-tree">
+                            <div class="result-wrap">
+                                <i></i>
+                            </div>
+                            <p>Предоплата или договор</p>
+                        </div><!-- .result-tree -->
+                        <div class="col-md-2 col-xs-2 result-five">
+                            <div class="result-wrap">
+                                <i></i>
+                            </div>
+                            <p>Выполнение заказа в обозначенный срок</p>
+                        </div><!-- .result-five -->
+                        <div class="col-md-2 col-xs-2 result-six">
+                            <div class="result-wrap">
+                                <i></i>
+                            </div>
+                            <p>Сдача проекта</p>
+                        </div><!-- .result-six -->
+                    </div><!-- .wrap-results -->
+                </div>
+            </div>
+        </section><!-- .result -->
+        <section id="cost" class="translation">
+            <div class="container">
+                <div class="row">
+                    <h2><span>Процесс перевода</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <p><i class="one"></i>Определение тематики и сложности перевода</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p><i class="too"></i>Выполнение перевода</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p><i class="tree"></i>Корректура</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p><i class="four"></i>Редактура</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p><i class="five"></i>Верстка при необходимости</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p><i class="six"></i>Заверение при необходимости</p>
+                    </div>
+                </div>
+            </div>
+        </section><!-- .translation -->
+        <section class="guarantee">
+            <div class="container">
+                <div class="row">
+                    <h2><span>Гарантия качества</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <img class="img_left" src="img/guarantee.png" alt="">
+                        <p><strong>Мы гарантируем</strong> качественный результат. В случае невыполнения своих обязательств мы вернем Вам деньги. Другими словами, вы платите только за качественную работу и конечный результат</p>
+                        <a href="#">Условия и гарантии</a>
+                    </div>
+                </div>
+            </div>
+        </section><!-- .guarantee -->
+        <section class="package">
+            <div class="container">
+                <div class="row">
+                    <h2><span>Выберите свой пакет перевода</span></h2>
+                </div>
+                <div class="row ch-grid">
+                    <div class="col-md-4 ch-item" data-id="0">
+                        <div class="package_item color_one">
+                            <p class="name">"Стандартный"</p>
+                            <div class="wrap_package_img">
+                                <img class="package_img" src="img/package_1.gif" alt="Тариф стандартный">
+                            </div>
+                            <p class="desc">Шаблонные документы от 310 руб. за страницу</p>
+                            <a href="#" class="order">Заказать</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ch-item active" data-id="1">
+                        <div class="package_item color_too">
+                            <p class="name">"Профессиональный"</p>
+                            <div class="wrap_package_img">
+                                <img class="package_img" src="img/package_2.gif" alt="Тариф профессиональный">
+                            </div>
+                            <p class="desc">Профессиональная и техническая лексика от 340 руб. за страницу</p>
+                            <a href="#" class="order">Заказать</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ch-item" data-id="2">
+                        <div class="package_item color_tree">
+                            <p class="name">"Премиум"</p>
+                            <div class="wrap_package_img">
+                                <img class="package_img" src="img/package_3.gif" alt="Тариф профессиональный">
+                            </div>
+                            <p class="desc">Экспертный перевод + корректировка + верстка от 710 руб. за страницу</p>
+                            <a href="#" class="order">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- .package -->
+        <section class="calculator">
+            <div class="container">
+                <div class="row">
+                    <h2>Расчитать стоимость перевода</h2>
+                </div>
+                <div class="row">
+                    <form id="calk" action="#" method="post" enctype="multipart/form-data">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-4">
+                            <div class="form_item_input">
+                                <label>Кол-во страниц</label>
+                                <input id="pages" type="number" placeholder="Кол-во страниц" min="1" value="1" name="pages" >
+                            </div><!-- .form_item -->
+                            <div class="form_item_input small">
+                                <label>Язык оригинала:</label>
+                                <select class="select" id="transfrom" name="transfrom">
+                                    <option data-price="410|440|1030" value="Адыгейский">Адыгейский</option>
+                                    <option data-price="390|420|1010" value="Азербайджанский">Азербайджанский</option>
+                                    <option data-price="980|1180|1500" value="Албанский">Албанский</option>
+                                    <option data-price="350|380|710" value="Английский" selected="">Английский</option>
+                                    <option data-price="510|600|1300" value="Арабский">Арабский</option>
+                                    <option data-price="390|420|1010" value="Армянский">Армянский</option>
+                                    <option data-price="850|950|1010" value="Белорусский">Белорусский</option>
+                                    <option data-price="450|510|850" value="Болгарский">Болгарский</option>
+                                    <option data-price="630|710|960" value="Венгерский">Венгерский</option>
+                                    <option data-price="850|950|1150" value="Вьетнамский">Вьетнамский</option>
+                                    <option data-price="800|890|1150" value="Голландский">Голландский</option>
+                                    <option data-price="780|850|1120" value="Греческий">Греческий</option>
+                                    <option data-price="850|910|1250" value="Грузинский">Грузинский</option>
+                                    <option data-price="950|1010|1400" value="Дари">Дари</option>
+                                    <option data-price="650|740|1200" value="Датский">Датский</option>
+                                    <option data-price="800|890|1010" value="Иврит">Иврит</option>
+                                    <option data-price="2350|2450|2550" value="Индонезийский">Индонезийский</option>
+                                    <option data-price="650|710|1120" value="Испанский">Испанский</option>
+                                    <option data-price="650|710|1120" value="Итальянский">Итальянский</option>
+                                    <option data-price="500|610|1100" value="Казахский">Казахский</option>
+                                    <option data-price="500|610|1100" value="Киргизский">Киргизский</option>
+                                    <option data-price="1500|1600|1700" value="Китайский">Китайский</option>
+                                    <option data-price="1600|1700|1800" value="Корейский">Корейский</option>
+                                    <option data-price="1700|1800|2100" value="Лаосский">Лаосский</option>
+                                    <option data-price="1020|1100|1200" value="Латынь">Латынь</option>
+                                    <option data-price="850|950|1050" value="Латышский">Латышский</option>
+                                    <option data-price="850|950|1050" value="Литовский">Литовский</option>
+                                    <option data-price="850|950|1050" value="Македонский">Македонский</option>
+                                    <option data-price="850|950|1050" value="Молдавский">Молдавский</option>
+                                    <option data-price="910|980|1150" value="Монгольский">Монгольский</option>
+                                    <option data-price="540|650|950" value="Немецкий">Немецкий</option>
+                                    <option data-price="1400|1600|1800" value="Норвежский">Норвежский</option>
+                                    <option data-price="670|750|880" value="Польский">Польский</option>
+                                    <option data-price="670|750|880" value="Португальский">Португальский</option>
+                                    <option data-price="710|850|950" value="Пушту">Пушту</option>
+                                    <option data-price="850|950|1260" value="Румынский">Румынский</option>
+                                    <option data-price="850|950|1260" value="Сербский">Сербский</option>
+                                    <option data-price="850|950|1260" value="Сербскохорватский">Сербскохорватский</option>
+                                    <option data-price="850|950|1260" value="Словацкий">Словацкий</option>
+                                    <option data-price="850|950|1260" value="Словенский">Словенский</option>
+                                    <option data-price="1100|1200|1260" value="Таджикский">Таджикский</option>
+                                    <option data-price="1415|1489|2757" value="Тайский">Тайский</option>
+                                    <option data-price="400|500|970" value="Татарский">Татарский</option>
+                                    <option data-price="500|600|990" value="Турецкий">Турецкий</option>
+                                    <option data-price="1100|1200|1260" value="Туркменский">Туркменский</option>
+                                    <option data-price="500|600|970" value="Узбекский">Узбекский</option>
+                                    <option data-price="500|600|970" value="Украинский">Украинский</option>
+                                    <option data-price="750|850|1250" value="Урду">Урду</option>
+                                    <option data-price="750|850|1225" value="Фарси">Фарси</option>
+                                    <option data-price="1400|1600|1800" value="Финский">Финский</option>
+                                    <option data-price="630|810|1170" value="Французский">Французский</option>
+                                    <option data-price="1400|1600|1800" value="Хинди">Хинди</option>
+                                    <option data-price="850|950|1260" value="Хорватский">Хорватский</option>
+                                    <option data-price="850|950|1260" value="Чешский">Чешский</option>
+                                    <option data-price="1500|1600|1800" value="Шведский">Шведский</option>
+                                    <option data-price="850|950|1150" value="Эстонский">Эстонский</option>
+                                    <option data-price="1600|1700|2250" value="Японский">Японский</option>
+                                    <option data-price="||" value="Русский">Русский</option>
+                                </select>
+                            </div><!-- .form_item -->
+                            <div class="form_item_input small">
+                                <label>Язык перевода:</label>
+                                <select class="select" id="transto" name="transto">
+                                    <option value="Адыгейский" data-price="520|625|1240">Адыгейский</option>
+                                    <option value="Азербайджанский" data-price="510|605|1210">Азербайджанский</option>
+                                    <option value="Албанский" data-price="1050|1365|1700">Албанский</option>
+                                    <option value="Английский" data-price="500|625|1120">Английский</option>
+                                    <option value="Арабский" data-price="660|785|1500">Арабский</option>
+                                    <option value="Армянский" data-price="510|605|1210">Армянский</option>
+                                    <option value="Белорусский" data-price="1050|1200|1250">Белорусский</option>
+                                    <option value="Болгарский" data-price="530|610|1050">Болгарский</option>
+                                    <option value="Венгерский" data-price="720|810|1160">Венгерский</option>
+                                    <option value="Вьетнамский" data-price="1100|1250|1350">Вьетнамский</option>
+                                    <option value="Голандский" data-price="960|1060|1350">Голандский</option>
+                                    <option value="Греческий" data-price="930|1030|1320">Греческий</option>
+                                    <option value="Грузинский" data-price="950|1100|1370">Грузинский</option>
+                                    <option value="Дари" data-price="1100|1250|1600">Дари</option>
+                                    <option value="Датский" data-price="700|792|1400">Датский</option>
+                                    <option value="Иврит" data-price="950|1100|1210">Иврит</option>
+                                    <option value="Индонезийский" data-price="2510|2650|2750">Индонезийский</option>
+                                    <option value="Испанский" data-price="780|850|1320">Испанский</option>
+                                    <option value="Итальянский" data-price="780|850|1320">Итальянский</option>
+                                    <option value="Казахский" data-price="650|715|1260">Казахский</option>
+                                    <option value="Киргизский" data-price="650|765|1260">Киргизский</option>
+                                    <option value="Китайский" data-price="1650|1750|1850">Китайский</option>
+                                    <option value="Корейский" data-price="1750|1850|1950">Корейский</option>
+                                    <option value="Лаосский" data-price="1850|1950|2250">Лаосский</option>
+                                    <option value="Латынь" data-price="1120|1250|1350">Латынь</option>
+                                    <option value="Латышский" data-price="980|1100|1250">Латышский</option>
+                                    <option value="Литовский" data-price="980|1100|1250">Литовский</option>
+                                    <option value="Македонский" data-price="980|1100|1250">Македонский</option>
+                                    <option value="Молдавский" data-price="980|1100|1250">Молдавский</option>
+                                    <option value="Монгольский" data-price="1100|1250|1350">Монгольский</option>
+                                    <option value="Немецкий" data-price="690|775|1150">Немецкий</option>
+                                    <option value="Норвежский" data-price="1650|1850|2050">Норвежский</option>
+                                    <option value="Польский" data-price="850|950|1100">Польский</option>
+                                    <option value="Португальский" data-price="850|950|1100">Португальский</option>
+                                    <option value="Пушту" data-price="920|1050|1250">Пушту</option>
+                                    <option value="Румынский" data-price="980|1100|1460">Румынский</option>
+                                    <option value="Сербский" data-price="980|1100|1460">Сербский</option>
+                                    <option value="Сербскохорватский" data-price="980|1100|1460">Сербскохорватский</option>
+                                    <option value="Словацкий" data-price="980|1100|1460">Словацкий</option>
+                                    <option value="Словенский" data-price="980|1100|1460">Словенский</option>
+                                    <option value="Таджикский" data-price="1250|1350|1460">Таджикский</option>
+                                    <option value="Тайский" data-price="1565|1674|2957">Тайский</option>
+                                    <option value="Татарский" data-price="550|635|1170">Татарский</option>
+                                    <option value="Турецкий" data-price="650|735|1170">Турецкий</option>
+                                    <option value="Туркменский" data-price="1250|1350|1460">Туркменский</option>
+                                    <option value="Узбекский" data-price="650|735|1060">Узбекский</option>
+                                    <option value="Украинский" data-price="650|735|1060">Украинский</option>
+                                    <option value="Урду" data-price="950|1050|1250">Урду</option>
+                                    <option value="Фарси" data-price="950|1050|1425">Фарси</option>
+                                    <option value="Финский" data-price="1650|1850|2050">Финский</option>
+                                    <option value="Французский" data-price="850|980|1370">Французский</option>
+                                    <option value="Хорватский" data-price="980|1100|1460">Хорватский</option>
+                                    <option value="Хинди" data-price="1650|1850|2050">Хинди</option>
+                                    <option value="Чешский" data-price="980|1100|1460">Чешский</option>
+                                    <option value="Шведский" data-price="1650|1850|2050">Шведский</option>
+                                    <option value="Эстонский" data-price="980|1100|1250">Эстонский</option>
+                                    <option value="Японский" data-price="1750|1900|2450">Японский</option>
+                                    <option selected="" value="Русский" data-price="||">Русский</option>
+                                </select>
+                            </div><!-- .form_item -->
+                            <div class="form_item">
+                                <input id="notarial" type="checkbox" name="notarial" >
+                                <label for="notarial">Нотариальное заверение</label>
+                            </div><!-- .form_item -->
+                            <div class="form_item">
+                                <input id="verstka" type="checkbox" name="verstka" >
+                                <label for="verstka">Верстка</label>
+                            </div><!-- .form_item -->
+                            <div id="kalk" class="form_item">
+                                <p>
+                                    Стоимость
+                                    <span id="variant">экспертного</span>
+                                    перевода:<br>
+                                    <span class="wpcf7-form-control-wrap price_calk">
+                                    <input class="wpcf7-form-control wpcf7-text price_name" type="text" name="price_calk" value="" size="40" aria-invalid="false">
+                                    </span> руб
+                                    </p>
+                            </div>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-4">
+                            <div class="application">
+                                <input type="text" name="first_name" placeholder="Введите Ваше имя">
+                                <input type="text" name="phone" placeholder="Введите Ваш телефон">
+                                <input type="text" name="email" placeholder="Введите Ваше e-mail">
+                                <div class="file_upload_3">
+                                    <button class="button_3" type="button">Обзор</button>
+                                    <div class="div_3">Загрузить файл</div>
+                                    <input class="input_3" type="file" name="file-upload">
+                                </div>
+                                <a id="add_comm_3" href="#">Добавить комментарий</a>
+                                <div class="wrap-comment_3">
+                                    <textarea name="comment" id="t_comm" cols="27" rows="2">Ваш комментарий</textarea>
+                                </div>
+                                <input type="submit" value="Отправить">
+                            </div><!-- .application -->
+                        </div>
+                        <div class="col-md-1"></div>
+                    </form>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="#" class="donwload">Скачать подробный прайс по всем языкам</a>
+                    </div>
+                </div>
+            </div>
+        </section><!-- .calculator -->
+        <section class="discounts">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2><span>Для наших клиентов действует гибкая система скидок!</span></h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-2">
+                        <div class="discounts-price">
+                            <p>2,5%</p>
+                        </div>
+                        <p>При каждом повторном заказе скидка на заказ <strong>2,5 %</strong></p>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="discounts-price">
+                            <p>5%</p>
+                        </div>
+                        <p>При заказе от <strong>25</strong> условных страниц скидка на заказ <strong>5 %</strong></p>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="discounts-price">
+                            <p>7%</p>
+                        </div>
+                        <p>При заказе от <strong>50</strong> условных страниц скидка на заказ <strong>7 %</strong></p>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="discounts-price">
+                            <p>10%</p>
+                        </div>
+                        <p>При заказе от <strong>100</strong> условных страниц скидка на заказ <strong>10 %</strong></p>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="discounts-price best">
+                            <p>15%</p>
+                        </div>
+                        <p>При заказе от <strong>500</strong> условных страниц скидка на заказ <strong>15 %</strong></p>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+        </section>
+        <section class="payment">
+            <div class="container">
+                <div class="row">
+                    <h2><span>Оплату заказов можно осуществить следующими способами:</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="img-wrap">
+                            <img src="img/payment-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="img-wrap">
+                            <img src="img/payment-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="img-wrap">
+                            <img src="img/payment-3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="img-wrap">
+                            <img src="img/payment-4.jpg" alt="">
+                        </div>    
+                    </div>
+                    <div class="col-md-2">
+                        <div class="img-wrap">
+                            <img src="img/payment-5.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="img-wrap">
+                            <img src="img/payment-6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2><span>Рекомендации и отзывы клиентов</span></h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="bx-slider-wrapper">
+                        <ul class="bx-slider">
+                            <li>
+                                <div class="col-md-4">
+                                    <div class="img-slide"><img src="img/review-1.jpg" alt=""></div>
+                                </div>
+                                <div class="col-md-8 slide-content">
+                                    <div class="arrow-left"></div>
+                                    <p class="name">Анатолий Берг, 27 лет</p>
+                                    <p class="cont">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, placeat? Consequatur vel, tenetur perspiciatis, similique architecto, accusamus corrupti accusantium illum sequi repellat aut possimus! Autem, illo, quae? Illum consequatur, at quo quia eveniet quibusdam provident molestias necessitatibus, obcaecati, neque eligendi? Temporibus, debitis quisquam incidunt autem sunt delectus, odio! Quod aliquid totam nostrum, magnam quis consequuntur nisi voluptatem? Porro, modi, earum error facere amet dolore. Debitis id deserunt similique saepe suscipit laudantium, corporis harum sint aut</p>
+                                </div><!-- .slide-content -->
+                            </li>
+                            <li>
+                                <div class="col-md-4">
+                                    <div class="img-slide"><img src="img/review-2.jpg" alt=""></div>
+                                </div>
+                                <div class="col-md-8 slide-content">
+                                    <div class="arrow-left"></div>
+                                    <p class="name">Вадим Латышев, 31 год</p>
+                                    <p class="cont">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, placeat? Consequatur vel, tenetur perspiciatis, similique architecto, accusamus corrupti accusantium illum sequi repellat aut possimus! Autem, illo, quae? Illum consequatur, at quo quia eveniet quibusdam provident molestias necessitatibus, obcaecati, neque eligendi? Temporibus, debitis quisquam incidunt autem sunt delectus, odio! Quod aliquid totam nostrum, magnam quis consequuntur nisi voluptatem? Porro, modi, earum error facere amet dolore. Debitis id deserunt similique saepe suscipit laudantium, corporis harum sint aut</p>
+                                </div><!-- .slide-content -->
+                            </li>
+                            <li>
+                                <div class="col-md-4">
+                                    <div class="img-slide"><img src="img/review-3.jpg" alt=""></div>
+                                </div>
+                                <div class="col-md-8 slide-content">
+                                    <div class="arrow-left"></div>
+                                    <p class="name">Анна Литюк, 23 года</p>
+                                    <p class="cont">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, placeat? Consequatur vel, tenetur perspiciatis, similique architecto, accusamus corrupti accusantium illum sequi repellat aut possimus! Autem, illo, quae? Illum consequatur, at quo quia eveniet quibusdam provident molestias necessitatibus, obcaecati, neque eligendi? Temporibus, debitis quisquam incidunt autem sunt delectus, odio! Quod aliquid totam nostrum, magnam quis consequuntur nisi voluptatem? Porro, modi, earum error facere amet dolore. Debitis id deserunt similique saepe suscipit laudantium, corporis harum sint aut</p>
+                                </div><!-- .slide-content -->
+                            </li>
+                            <li>
+                                <div class="col-md-4">
+                                    <div class="img-slide"><img src="img/review-4.jpg" alt=""></div>
+                                </div>
+                                <div class="col-md-8 slide-content">
+                                    <div class="arrow-left"></div>
+                                    <p class="name">Виктор Анисимов, 27 лет</p>
+                                    <p class="cont">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, placeat? Consequatur vel, tenetur perspiciatis, similique architecto, accusamus corrupti accusantium illum sequi repellat aut possimus! Autem, illo, quae? Illum consequatur, at quo quia eveniet quibusdam provident molestias necessitatibus, obcaecati, neque eligendi? Temporibus, debitis quisquam incidunt autem sunt delectus, odio! Quod aliquid totam nostrum, magnam quis consequuntur nisi voluptatem? Porro, modi, earum error facere amet dolore. Debitis id deserunt similique saepe suscipit laudantium, corporis harum sint aut</p>
+                                </div><!-- .slide-content -->
+                            </li>
+                        </ul><!-- .bx-slider -->
+                    </div><!-- .bx-slider-wrapper -->
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="#" class="btn">Оставить отзыв</a>
+                    </div>
+                </div>
+            </div>
+        </section><!-- .reviews -->
+        <footer class="footer">
+            <div class="foot_artic">
+                <div class="container">
+                    <div class="row">
+                        <h2><span>Последние статьи в блоге</span></h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="artic_item">
+                                <div class="artic_img">
+                                    <a href="#">
+                                        <img src="img/blog-1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="artic_content">
+                                    <p class="zag"><a href="#">Какая-то статья в блоге</a></p>
+                                    <p class="date">11.11.2015</p>
+                                    <p class="desc">Тут краткий текст статьи в блоге состаящий из двух предложений</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="artic_item">
+                                <div class="artic_img">
+                                    <a href="#">
+                                        <img src="img/blog-2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="artic_content">
+                                    <p class="zag"><a href="#">Какая-то статья в блоге</a></p>
+                                    <p class="date">11.11.2015</p>
+                                    <p class="desc">Тут краткий текст статьи в блоге состаящий из двух предложений</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="artic_item">
+                                <div class="artic_img">
+                                    <a href="#">
+                                        <img src="img/blog-3.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="artic_content">
+                                    <p class="zag"><a href="#">Какая-то статья в блоге</a></p>
+                                    <p class="date">11.11.2015</p>
+                                    <p class="desc">Тут краткий текст статьи в блоге состаящий из двух предложений</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="foot_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <nav class="foot-menu">
+                                <ul>
+                                    <li><a href="#">Услуги</a></li>
+                                    <li><a href="#">Стоимость</a></li>
+                                    <li><a href="#">Оплата</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="#order" class="order">Заказать перевод</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="foot_bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p>&copy; kortes-bp.ru, 2015.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <p class="contact">
+                                <strong>Телефон:</strong> +7(988) 000-00-00<br/>
+                                <strong>Skype:</strong> <a href="callto:kortesbp">kortesbp</a>
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <ul class="soc-menu">
+                                <li><a class="vk" href="#">Вконтакте</a></li>
+                                <li><a class="tw" href="#">Twitter</a></li>
+                                <li><a class="fb" href="#">Facebook</a></li>
+                                <li><a class="ok" href="#">Одноклассники</a></li>
+                                <li><a class="gog" href="#">google +</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .foot_bottom -->
+        </footer>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- build:js js/vendor.js -->
+        <script src="bower/jquery/dist/jquery.js"></script>
+        <script src="bower/fancybox/source/jquery.fancybox.js"></script>
+        <script src="bower/bxslider-4/dist/jquery.bxslider.js"></script>
+        <script src="bower/Stepper/jquery.fs.stepper.js"></script>
+        <script src="bower/Selecter/jquery.fs.selecter.js"></script>
+        <script src="js/PageScroll2id.min.js"></script>
+        <script src="js/animate-css.js"></script>
+        <!-- endbuild -->
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <!-- build:js js/main.js -->
+        <script src="js/main.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "kortes",
+  "description": "Верстка сайта заказа переводов",
+  "main": "index.html",
+  "authors": [
+    "olegverstka <olegverstka@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "http://webfrondev.ru/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bourbon": "~4.2.6",
+    "fancybox": "~2.1.5",
+    "jquery": "1.11.2",
+    "Stepper": "~3.0.8",
+    "Selecter": "~3.2.4",
+    "bxslider-4": "bx-slider.js#~4.2.5"
+  }
+}
