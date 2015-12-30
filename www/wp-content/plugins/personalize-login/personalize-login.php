@@ -115,7 +115,7 @@ class Personalize_Login_Plugin {
 	 /**
 	 * Хук деактивации плагина.
 	 *
-	 * Создает все страницы WordPress, необходимые плагину.
+	 * Удаляет созданное плагином.
 	 */
 	public static function plugin_deactivated() {
 		// Удаление возможностей
